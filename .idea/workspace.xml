@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson1/first_get_request/TryGetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson1/first_get_request/TryGetWithHardResponseBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test_for_web/TestForWeb.java" afterDir="false" />
+    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="hhhh">
+      <change afterPath="$PROJECT_DIR$/src/main/java/driver_init/DriverInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hw_1/Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test_for_web/TestForWeb3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test_for_web/TestForWeb4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +38,60 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Task1.executor": "Run",
     "Application.TestForWeb.executor": "Run",
+    "Application.TestForWeb3.executor": "Run",
+    "Application.TestForWeb4.executor": "Run",
     "Application.TryGetRequest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestForWeb">
+  <component name="RunManager" selected="Application.Task1">
+    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hw_1.Task1" />
+      <module name="QA_Auto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestForWeb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test_for_web.TestForWeb" />
+      <module name="QA_Auto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test_for_web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestForWeb3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test_for_web.TestForWeb3" />
+      <module name="QA_Auto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test_for_web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestForWeb4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test_for_web.TestForWeb4" />
       <module name="QA_Auto" />
       <extension name="coverage">
         <pattern>
@@ -78,6 +118,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task1" />
+        <item itemvalue="Application.TestForWeb4" />
+        <item itemvalue="Application.TestForWeb3" />
         <item itemvalue="Application.TestForWeb" />
         <item itemvalue="Application.TryGetRequest" />
       </list>
@@ -92,6 +135,30 @@
       <option name="presentableId" value="Default" />
       <updated>1714667401416</updated>
     </task>
+    <task id="LOCAL-00001" summary="hhhh">
+      <option name="closed" value="true" />
+      <created>1715250645361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715250645361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hhhh" />
+    <option name="LAST_COMMIT_MESSAGE" value="hhhh" />
   </component>
 </project>
