@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 11">
+    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 111">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hw_2/Task1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw_1/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw_1/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw_1/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw_1/Task3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw_1/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw_1/Task4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +37,13 @@
   "keyToString": {
     "Application.Task1.executor": "Run",
     "Application.Task2.executor": "Run",
+    "Application.Task3.executor": "Run",
     "Application.Task4$Locators.executor": "Run",
     "Application.TestForWeb.executor": "Run",
     "Application.TestForWeb3.executor": "Run",
     "Application.TestForWeb4.executor": "Run",
     "Application.TryGetRequest.executor": "Run",
+    "Application.hw_2.Task1.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -51,7 +51,7 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Task3">
+  <component name="RunManager" selected="Application.hw_2.Task1">
     <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hw_1.Task1" />
       <module name="QA_Auto" />
@@ -104,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestForWeb4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test_for_web.TestForWeb4" />
+    <configuration name="hw_2.Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hw_2.Task1" />
       <module name="QA_Auto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test_for_web.*" />
+          <option name="PATTERN" value="hw_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.hw_2.Task1" />
         <item itemvalue="Application.Task3" />
         <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Task4$Locators" />
         <item itemvalue="Application.Task1" />
-        <item itemvalue="Application.TestForWeb4" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715944695198</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="auto hw 111">
+      <option name="closed" value="true" />
+      <created>1715950539566</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715950539566</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +202,7 @@
     <MESSAGE value="hhhh" />
     <MESSAGE value="auto hw 1" />
     <MESSAGE value="auto hw 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto hw 11" />
+    <MESSAGE value="auto hw 111" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto hw 111" />
   </component>
 </project>
