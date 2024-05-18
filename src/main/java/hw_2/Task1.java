@@ -21,40 +21,66 @@ public class Task1 {
     - France, Germany, Italy, Spain.
      */
     public static void main(String[] args) {
-       //выбираем рено
+
         WebDriver driver = DriverInit.setUpDriver();
         driver.get("https://only-testing-blog.blogspot.com/2014/01/textbox.html?");
         WebElement selectCar1 = driver.findElement(By.id("Carlist"));
         Select carlist = new Select(selectCar1);
         carlist.selectByVisibleText("Renault");
 
-        //выводим на экран авто из списка
+
         System.out.println("Автомобілі доступні для вибору:");
         List<WebElement> allOptions = carlist.getOptions();
-        for (WebElement element : allOptions){
-            System.out.print(element.getText() + ", ");
+        int size = allOptions.size();
+        for (int i = 0; i < size; i++) {
+            WebElement element = allOptions.get(i);
+            if (i == size - 1) {
+                System.out.print(element.getText() + ".");
+            } else {
+                System.out.print(element.getText() + ", ");
+            }
         }
+        System.out.println();
 
 
+        WebElement selectCar2 = driver.findElement(By.name("FromLB"));
+        Select fromLB = new Select(selectCar2);
+
+        fromLB.selectByVisibleText("France");
+        fromLB.selectByVisibleText("Germany");
+        fromLB.selectByVisibleText("Italy");
+        fromLB.selectByVisibleText("Spain");
 
 
-        //WebElement selectCar2 = driver.findElement(By.name("FormLB"));
-        //Select formLB = new Select(selectCar2);
+        System.out.println("Країни з першої таблиці:");
+        List<WebElement> alldeselectedOptions = fromLB.getOptions();
+        int size1 = alldeselectedOptions.size();
+        for (int i = 0; i < size; i++) {
+            WebElement element = alldeselectedOptions.get(i);
+            if (i == size - 1) {
+                System.out.print(element.getText() + ".");
+            } else {
+                System.out.print(element.getText() + ", ");
+            }
+        }
+        System.out.println();
 
-        //formLB.selectByVisibleText("");
 
-
-
-
-
-
-
+        System.out.println("Країни з другої таблиці:");
+        List<WebElement> selectedOptions = fromLB.getAllSelectedOptions();
+        int size2 = selectedOptions.size();
+        for (int i = 0; i < size; i++) {
+            WebElement element = allOptions.get(i);
+            if (i == size - 1) {
+                System.out.print(element.getText() + ".");
+            } else {
+                System.out.print(element.getText() + ", ");
+            }
+        }
+        driver.quit();
 
 
     }
-
-
-
-
-
 }
+
+
