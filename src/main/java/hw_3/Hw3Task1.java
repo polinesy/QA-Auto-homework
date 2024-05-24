@@ -1,13 +1,12 @@
 package hw_3;
 
-import driver_init.DriverInit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class Task1 {
+public class Hw3Task1 {
 
     private static class Urls {
         private static final String googleSearch = "https://www.google.com/search";
@@ -17,7 +16,6 @@ public class Task1 {
 
     }
     private static class LocatorsGoogle {
-
         private static final By link1 = By.xpath("//*[@id='rso']/div[1]/div/div/div/div[1]/div/div/span/a/h3");
         private static final By link2 = By.xpath("//h3[contains(text(), 'AlertsDemo')]");
         private static final By clearButton =  By.xpath("//*[@id='tsf']/div[1]/div[1]/div[2]/div/div[3]/div[1]/div/span/svg");
@@ -32,7 +30,8 @@ public class Task1 {
     }*/
 
     // шаг 1 - открываем все вкладки
-    public static void openAllPages (WebDriver driver, WebElement textArea1, WebElement textArea2, WebElement link1, WebElement link2) {
+    public static void openAllPages (WebDriver driver, WebElement textArea1,
+                                     WebElement textArea2, WebElement link1, WebElement link2) {
         Actions actions = new Actions(driver);
         driver.get(Urls.googleSearch);
         textArea1 = driver.findElement(LocatorsGoogle.textArea1);
@@ -44,23 +43,23 @@ public class Task1 {
 
         // открываем вкладку 1 в новом окне
         if (System.getProperty("os.name").toLowerCase().contains("mac")) {
-            // Для MacOS используем клавишу Command
             actions.keyDown(Keys.COMMAND).click(link1).keyUp(Keys.COMMAND).perform();
         } else {
-            // Для Windows и других используем клавишу Control
             actions.keyDown(Keys.CONTROL).click(link1).keyUp(Keys.CONTROL).perform();
         }
 
         //ищем по второй ссылке
         driver.findElement(LocatorsGoogle.clearButton).click();
-        actions.sendKeys()
+        actions.sendKeys(textArea2, Urls.alertsDemo).sendKeys(Keys.ENTER).perform();
 
+        //открываем вторую ссылку в новом окне
+        if (System.getProperty("os.name").toLowerCase().contains("mac")) {
+            actions.keyDown(Keys.COMMAND).click(link2).keyUp(Keys.COMMAND).perform();
+        } else {
+            actions.keyDown(Keys.CONTROL).click(link2).keyUp(Keys.CONTROL).perform();
+        }
 
-
-
-
-        //actions.
-
+        driver.get(Urls.w3schools);
     }
 
 
