@@ -78,6 +78,12 @@
             <version>7.18.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>7.3.2</version>
+        </dependency>
+
 
     </dependencies>
 

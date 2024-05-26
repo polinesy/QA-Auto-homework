@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hw_3/Hw3Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw_3/Hw3Task1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +24,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "polinesy"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="12f2bf88-0e0c-4989-9c26-bae5356e78e1" />
+        <option name="url" value="https://github.com/polinesy/QA-Auto-homework.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -35,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Hw3Task1 (1).executor": "Run",
     "Application.Hw3Task1.executor": "Run",
     "Application.Task1.executor": "Run",
     "Application.Task2.executor": "Run",
@@ -59,7 +75,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Hw3Task1">
-    <configuration name="Hw3Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Hw3Task1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hw_3.Hw3Task1" />
       <module name="QA_Auto" />
       <extension name="coverage">
@@ -72,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hw_1.Task2" />
+    <configuration name="Hw3Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hw_3.Hw3Task1" />
       <module name="QA_Auto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hw_1.*" />
+          <option name="PATTERN" value="hw_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Hw3Task1" />
+        <item itemvalue="Application.Hw3Task1 (1)" />
         <item itemvalue="Application.hw_2.Task1" />
         <item itemvalue="Application.hw_2.Task2" />
         <item itemvalue="Application.Task3" />
-        <item itemvalue="Application.Task2" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716541451488</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="auto hw 3">
+      <option name="closed" value="true" />
+      <created>1716707548109</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716707548109</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
