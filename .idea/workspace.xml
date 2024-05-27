@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw_3/Hw3Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw_3/Hw3Task1.java" afterDir="false" />
-    </list>
+    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -255,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716707548109</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="auto hw 3">
+      <option name="closed" value="true" />
+      <created>1716747338203</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716747338203</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
