@@ -116,7 +116,7 @@ public class Hw3Task1 {
     }
 
     // выполняем действия на странице гиннеса
-    public static void fillRegistrationForm (WebDriver driver) {
+    public static void fillRegistrationForm (WebDriver driver) throws InterruptedException {
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
         for (String tab : tabs) {
             driver.switchTo().window(tab);
@@ -128,6 +128,7 @@ public class Hw3Task1 {
                 }
             }
         }
+        Thread.sleep(3000);
         driver.findElement(LocatorsGuinness.lastNameG).sendKeys("Polina");
         driver.findElement(LocatorsGuinness.firstNameG).sendKeys("Sydorenko");
         driver.findElement(LocatorsGuinness.birthDay).sendKeys("07");
@@ -164,7 +165,7 @@ public static void alertPage (WebDriver driver){
         }
     }
     //клик 1
-    driver.findElement(By.id("alertBox")).click();
+    driver.findElement(By.xpath("//button[@id='alertBox' and @onclick='alertFunction()']")).click();
     Alert alert1 = driver.switchTo().alert();
     alert1.accept();
     WebElement text1 = driver.findElement(By.id("output"));
@@ -191,11 +192,11 @@ public static void alertPage (WebDriver driver){
         public static void main (String[]args) throws InterruptedException {
             WebDriver driver = DriverInit.setUpDriver();
             openAllPages(driver);
-            //sendName(driver);
-            //fillRegistrationForm(driver);
+            sendName(driver);
+            fillRegistrationForm(driver);
             alertPage(driver);
             driver.quit();
-            //System.out.println("see me");
+            System.out.println("see me");
         }
 
 }
