@@ -16,7 +16,7 @@ public class CustomWaiters {
 
     private FluentWait<WebDriver> fluentWait() {
         return new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(15))
+                .withTimeout(Duration.ofSeconds(30))
                 .pollingEvery(Duration.ofSeconds(1))
                 .ignoring(NoSuchElementException.class)
                 .ignoring(ElementNotInteractableException.class)

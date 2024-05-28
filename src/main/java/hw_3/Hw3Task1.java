@@ -97,6 +97,7 @@ public class Hw3Task1 {
         }catch (NoSuchElementException e){
             System.out.println(e.getMessage());
         }
+        //------> у меня все время выдает ошибку локатора на этмо сайте, а куки не появляются
          */
 
         WebElement innerIframe = driver.findElement(By.xpath("//iframe[@id='iframeResult']"));
