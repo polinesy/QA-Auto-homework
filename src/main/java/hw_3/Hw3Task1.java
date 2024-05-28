@@ -87,7 +87,6 @@ public class Hw3Task1 {
     }
 
 
-
    // выполняем действия на странице школы
     public static void sendName (WebDriver driver) throws InterruptedException {
         driver.get(Urls.w3schools);
@@ -198,13 +197,11 @@ public class Hw3Task1 {
     System.out.println(text3.getText());
 
 }
-
-
         public static void main (String[]args) throws InterruptedException {
             WebDriver driver = DriverInit.setUpDriver();
             openAllPages(driver);
-            //sendName(driver);
-            //fillRegistrationForm(driver);
+            sendName(driver);
+            fillRegistrationForm(driver);
             alertPage(driver);
             driver.quit();
             System.out.println("see me");
