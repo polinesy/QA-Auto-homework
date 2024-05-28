@@ -58,6 +58,4 @@ public class CustomWaiters {
         waitForFunction(ExpectedConditions.elementSelectionStateToBe(locator, false));
     }
 
-
-
 }

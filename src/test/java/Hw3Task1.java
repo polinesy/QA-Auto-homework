@@ -1,9 +1,6 @@
-package hw_3;
-
 import driver_init.DriverInit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.SourceType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -101,8 +98,8 @@ public class Hw3Task1 {
         }
          */
 
-        WebElement innerIframe = driver.findElement(By.xpath("//iframe[@id='iframeResult']"));
-        driver.switchTo().frame(innerIframe);
+        WebElement iframe = driver.findElement(By.xpath("//iframe[@id='iframeResult']"));
+        driver.switchTo().frame(iframe);
 
         WebElement firstName = driver.findElement(LocatorsW3Schools.firstNameW3);
         WebElement lastName = driver.findElement(LocatorsW3Schools.lastNameW3);
@@ -132,10 +129,8 @@ public class Hw3Task1 {
                 }
             }
         }
-        CustomWaiters waiters = new CustomWaiters(driver);
-        //Thread.sleep(3000);
-        waiters.waitForVisibility(driver.findElement(LocatorsGuinness.lastNameG)).sendKeys("Polina");
-        //driver.findElement(LocatorsGuinness.lastNameG).sendKeys("Polina");
+        Thread.sleep(3000);
+        driver.findElement(LocatorsGuinness.lastNameG).sendKeys("Polina");
         driver.findElement(LocatorsGuinness.firstNameG).sendKeys("Sydorenko");
         driver.findElement(LocatorsGuinness.birthDay).sendKeys("07");
         driver.findElement(LocatorsGuinness.birthMonth).sendKeys("06");
@@ -158,36 +153,42 @@ public class Hw3Task1 {
     }
 
     //выполняем действия на странице алерт
+public static void alertPage (WebDriver driver) {
+    ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
 
-    public static void alertPage (WebDriver driver) {
-        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-
-        for (String tab : tabs) {
-            driver.switchTo().window(tab);
-            if (driver.getCurrentUrl().equals("https://www.hyrtutorials.com/p/alertsdemo.html")) {
-                break;
-            }
+    for (String tab : tabs) {
+        driver.switchTo().window(tab);
+        if (driver.getCurrentUrl().equals("https://www.hyrtutorials.com/p/alertsdemo.html")) {
+            break;
         }
-        System.out.println(driver.getCurrentUrl());
+    }
 
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    CustomWaiters waiters = new CustomWaiters(driver);
 
     //клик 1
-    wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='alertBox' and @onclick='alertFunction()']"))).click();
+    waiters.clickableStateOfElement(By.xpath("//button[@id='alertBox' and @onclick='alertFunction()']"));
+    //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='alertBox' and @onclick='alertFunction()']"))).click();
     Alert alert1 = driver.switchTo().alert();
     alert1.accept();
     WebElement text1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("output")));
     System.out.println(text1.getText());
 
-    // клик 2
+
+
+
+
+
+
+
+}
+
+   /* // клик 2
     wait.until(ExpectedConditions.elementToBeClickable(By.id("confirmBox"))).click();
     Alert alert2 = driver.switchTo().alert();
     alert2.dismiss();
     WebElement text2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("output")));
     System.out.println(text2.getText());
-
-    JavascriptExecutor js = (JavascriptExecutor) driver;
-    js.executeScript("window.scrollBy(0, 100)");
 
     // клик 3
     wait.until(ExpectedConditions.elementToBeClickable(By.id("promptBox"))).click();
@@ -198,13 +199,13 @@ public class Hw3Task1 {
     System.out.println(text3.getText());
 
 }
-
+*/
 
         public static void main (String[]args) throws InterruptedException {
             WebDriver driver = DriverInit.setUpDriver();
             openAllPages(driver);
-            //sendName(driver);
-            //fillRegistrationForm(driver);
+            sendName(driver);
+            fillRegistrationForm(driver);
             alertPage(driver);
             driver.quit();
             System.out.println("see me");
