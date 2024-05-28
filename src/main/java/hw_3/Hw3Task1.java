@@ -3,7 +3,6 @@ package hw_3;
 import driver_init.DriverInit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.SourceType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -52,32 +51,32 @@ public class Hw3Task1 {
     }
 
 
-    // шаг 1 - открываем все вкладки
+    // открываем все вкладки
     public static void openAllPages(WebDriver driver) throws InterruptedException {
         Actions actions = new Actions(driver);
         driver.get(Urls.googleSearch);
         WebElement textArea1 = driver.findElement(LocatorsGoogle.textArea1);
-        //ищем по ссылке
+
         actions.sendKeys(textArea1, Urls.guinnessPage).sendKeys(Keys.ENTER).perform();
         Thread.sleep(2000);
-        //добавляем новые элементы на текущей странице
+
         WebElement link1 = driver.findElement(LocatorsGoogle.link1);
-        //открываем вкладку 1 в новом окне
+
         if (System.getProperty("os.name").toLowerCase().contains("mac")) {
             actions.keyDown(Keys.COMMAND).click(link1).keyUp(Keys.COMMAND).perform();
         } else {
             actions.keyDown(Keys.CONTROL).click(link1).keyUp(Keys.CONTROL).perform();
         }
-        //добавляем элементы для второго поиска
+
         WebElement textArea2 = driver.findElement(LocatorsGoogle.textArea2);
 
-        //ищем по второй ссылке
+
         driver.findElement(LocatorsGoogle.clearButton).click();
         actions.sendKeys(textArea2, Urls.alertsDemo).sendKeys(Keys.ENTER).perform();
 
         WebElement link2 = driver.findElement(LocatorsGoogle.link2);
 
-        //открываем вторую ссылку в новом окне
+
         if (System.getProperty("os.name").toLowerCase().contains("mac")) {
             actions.keyDown(Keys.COMMAND).click(link2).keyUp(Keys.COMMAND).perform();
         } else {
@@ -134,7 +133,6 @@ public class Hw3Task1 {
         CustomWaiters waiters = new CustomWaiters(driver);
         //Thread.sleep(3000);
         waiters.waitForVisibility(driver.findElement(LocatorsGuinness.lastNameG)).sendKeys("Polina");
-        //driver.findElement(LocatorsGuinness.lastNameG).sendKeys("Polina");
         driver.findElement(LocatorsGuinness.firstNameG).sendKeys("Sydorenko");
         driver.findElement(LocatorsGuinness.birthDay).sendKeys("07");
         driver.findElement(LocatorsGuinness.birthMonth).sendKeys("06");
@@ -156,8 +154,8 @@ public class Hw3Task1 {
 
     }
 
-    //выполняем действия на странице алерт
 
+    //алерты
     public static void alertPage (WebDriver driver) {
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
 
@@ -171,14 +169,14 @@ public class Hw3Task1 {
 
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-    //клик 1
+
     wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='alertBox' and @onclick='alertFunction()']"))).click();
     Alert alert1 = driver.switchTo().alert();
     alert1.accept();
     WebElement text1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("output")));
     System.out.println(text1.getText());
 
-    // клик 2
+
     wait.until(ExpectedConditions.elementToBeClickable(By.id("confirmBox"))).click();
     Alert alert2 = driver.switchTo().alert();
     alert2.dismiss();
@@ -188,7 +186,7 @@ public class Hw3Task1 {
     JavascriptExecutor js = (JavascriptExecutor) driver;
     js.executeScript("window.scrollBy(0, 100)");
 
-    // клик 3
+
     wait.until(ExpectedConditions.elementToBeClickable(By.id("promptBox"))).click();
     Alert alert3 = driver.switchTo().alert();
     alert3.sendKeys("Final step of this task");
@@ -204,7 +202,6 @@ public class Hw3Task1 {
             fillRegistrationForm(driver);
             alertPage(driver);
             driver.quit();
-            System.out.println("see me");
         }
 
 }
