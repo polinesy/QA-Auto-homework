@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 3">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Hw3Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hw_3/Hw3Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hw_3/Hw3Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/waiters/CustomWaiters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/waiters/CustomWaiters.java" afterDir="false" />
+    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 3 done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hw_3/Hw3Task1addition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw_3/Hw3Task1_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw_4/Hw4Task1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +65,7 @@
     "Application.hw_2.Task2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.Hw3Task1_Test.firstTestOpenWindows.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "preferences.lookFeel"
@@ -73,24 +73,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hw_3" />
       <recent name="" />
       <recent name="waiters" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Hw3Task1">
-    <configuration name="Hw3Task1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hw_3.Hw3Task1" />
-      <module name="QA_Auto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hw_3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Hw3Task1_Test">
     <configuration name="Hw3Task1 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hw3Task1" />
       <module name="QA_Auto" />
@@ -111,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hw_2.Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hw_2.Task1" />
+    <configuration name="Hw3Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hw_3.Hw3Task1" />
       <module name="QA_Auto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hw_2.*" />
+          <option name="PATTERN" value="hw_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,26 +112,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hw_2.Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hw_2.Task2" />
+    <configuration name="Hw3Task1_Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Auto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hw_2.*" />
+          <option name="PATTERN" value="hw_3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="hw_3" />
+      <option name="MAIN_CLASS_NAME" value="hw_3.Hw3Task1_Test" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Hw3Task1_Test.firstTestOpenWindows" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Auto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hw_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hw_3" />
+      <option name="MAIN_CLASS_NAME" value="hw_3.Hw3Task1_Test" />
+      <option name="METHOD_NAME" value="firstTestOpenWindows" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Hw3Task1_Test" />
+        <item itemvalue="TestNG.Hw3Task1_Test.firstTestOpenWindows" />
         <item itemvalue="Application.Hw3Task1" />
         <item itemvalue="Application.Hw3Task1 (2)" />
         <item itemvalue="Application.Hw3Task1 (1)" />
-        <item itemvalue="Application.hw_2.Task1" />
-        <item itemvalue="Application.hw_2.Task2" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +286,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716822795302</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="auto hw 3 alert part ok">
+      <option name="closed" value="true" />
+      <created>1716872348830</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716872348830</updated>
+    </task>
+    <task id="LOCAL-00017" summary="auto hw 3 alert part ok">
+      <option name="closed" value="true" />
+      <created>1716883835615</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716883835615</updated>
+    </task>
+    <task id="LOCAL-00018" summary="auto hw 3 done">
+      <option name="closed" value="true" />
+      <created>1716884424295</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716884424295</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -301,6 +335,8 @@
     <MESSAGE value="auto hw 111" />
     <MESSAGE value="auto hw 2" />
     <MESSAGE value="auto hw 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto hw 3" />
+    <MESSAGE value="auto hw 3 alert part ok" />
+    <MESSAGE value="auto hw 3 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto hw 3 done" />
   </component>
 </project>
