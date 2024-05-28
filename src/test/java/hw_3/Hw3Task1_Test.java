@@ -166,13 +166,4 @@ public class Hw3Task1_Test {
     }
 
 
-
-
-
-
-
-
-
-
-
 }
