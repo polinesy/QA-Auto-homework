@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 3 test11">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hw_4/grouping/Groups.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hw_4/priority/Priority2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/prioryty.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testngGroupingHome.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testNG.xml" beforeDir="false" />
+    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 4 testGrouping">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw_4/parallelismus/ParallelClass1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw_4/parallelismus/ParallelClass2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testngParallelHome.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testNG.xml.executor": "Run",
     "TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngGroupingHome.xml.executor": "Run",
+    "TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParallelHome.xml.executor": "Run",
     "TestNG.Groups.executor": "Run",
     "TestNG.Groups.one.executor": "Run",
     "TestNG.Groups.two.executor": "Run",
@@ -97,7 +95,7 @@
       <recent name="waiters" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngGroupingHome.xml">
+  <component name="RunManager" selected="TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParallelHome.xml">
     <configuration name="Groups" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Auto" />
       <extension name="coverage">
@@ -151,24 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Priority1.f" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA_Auto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hw_4.priority.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hw_4.priority" />
-      <option name="MAIN_CLASS_NAME" value="hw_4.priority.Priority1" />
-      <option name="METHOD_NAME" value="f" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="/Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngGroupingHome.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Auto" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testngGroupingHome.xml" />
@@ -179,13 +159,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParallelHome.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Auto" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testngParallelHome.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParallelHome.xml" />
         <item itemvalue="TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngGroupingHome.xml" />
         <item itemvalue="TestNG.Groups" />
         <item itemvalue="TestNG.Groups.one" />
         <item itemvalue="TestNG.Groups.two" />
-        <item itemvalue="TestNG.Priority1.f" />
       </list>
     </recent_temporary>
   </component>
@@ -366,7 +356,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716895777250</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="auto hw 4 testGrouping">
+      <option name="closed" value="true" />
+      <created>1716985471953</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716985471953</updated>
+    </task>
+    <task id="LOCAL-00023" summary="auto hw 4 testGrouping">
+      <option name="closed" value="true" />
+      <created>1716985492765</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716985492765</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -395,7 +401,8 @@
     <MESSAGE value="auto hw 3 done" />
     <MESSAGE value="auto hw 3 test1" />
     <MESSAGE value="auto hw 3 test11" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto hw 3 test11" />
+    <MESSAGE value="auto hw 4 testGrouping" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto hw 4 testGrouping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
