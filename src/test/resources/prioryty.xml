@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllTests Suite">
+    <test name="AllTests">
+        <classes>
+        <class name="hw_4.priority.Priority2">
+            <methods>
+                <include name="g"/>
+                <include name="f"/>
+                <include name="e"/>
+                <include name="d"/>
+                <include name="c"/>
+                <include name="b"/>
+                <include name="a"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
