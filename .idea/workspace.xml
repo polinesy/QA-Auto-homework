@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 4 testGrouping">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hw_4/parallelismus/ParallelClass1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hw_4/parallelismus/ParallelClass2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testngParallelHome.xml" afterDir="false" />
+    <list default="true" id="8066ce94-16d0-41f1-be81-de52d271c6c5" name="Changes" comment="auto hw 4 testParallel">
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw_4/dataProviderTest/DataProviderClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hw_4/parameters/ParametersClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/dataProvider.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testngParametersHome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +67,12 @@
     "Application.hw_2.Task2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/dataProvider.xml.executor": "Run",
     "TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testNG.xml.executor": "Run",
     "TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngGroupingHome.xml.executor": "Run",
     "TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParallelHome.xml.executor": "Run",
+    "TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParametersHome.xml.executor": "Run",
+    "TestNG.DataProviderClass.executor": "Run",
     "TestNG.Groups.executor": "Run",
     "TestNG.Groups.one.executor": "Run",
     "TestNG.Groups.two.executor": "Run",
@@ -76,6 +81,7 @@
     "TestNG.Hw3Task1_Test.firstTestOpenWindows.executor": "Run",
     "TestNG.Hw3Task1_Test.sendNameSchools.executor": "Run",
     "TestNG.Hw3Task1_Test.testOpenWindows.executor": "Run",
+    "TestNG.ParametersClass.executor": "Run",
     "TestNG.Priority1.executor": "Run",
     "TestNG.Priority1.f.executor": "Run",
     "TestNG.Priority2.executor": "Run",
@@ -95,17 +101,17 @@
       <recent name="waiters" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParallelHome.xml">
-    <configuration name="Groups" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DataProviderClass">
+    <configuration name="DataProviderClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Auto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hw_4.grouping.*" />
+          <option name="PATTERN" value="hw_4.dataProviderTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hw_4.grouping" />
-      <option name="MAIN_CLASS_NAME" value="hw_4.grouping.Groups" />
+      <option name="PACKAGE_NAME" value="hw_4.dataProviderTest" />
+      <option name="MAIN_CLASS_NAME" value="hw_4.dataProviderTest.DataProviderClass" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -113,45 +119,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Groups.one" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParametersClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Auto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hw_4.grouping.*" />
+          <option name="PATTERN" value="hw_4.parameters.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hw_4.grouping" />
-      <option name="MAIN_CLASS_NAME" value="hw_4.grouping.Groups" />
-      <option name="METHOD_NAME" value="one" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="hw_4.parameters" />
+      <option name="MAIN_CLASS_NAME" value="hw_4.parameters.ParametersClass" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Groups.two" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/dataProvider.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA_Auto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hw_4.grouping.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="hw_4.grouping" />
-      <option name="MAIN_CLASS_NAME" value="hw_4.grouping.Groups" />
-      <option name="METHOD_NAME" value="two" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="/Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngGroupingHome.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA_Auto" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testngGroupingHome.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/dataProvider.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -169,13 +156,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParametersHome.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA_Auto" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testngParametersHome.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.DataProviderClass" />
+        <item itemvalue="TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParametersHome.xml" />
+        <item itemvalue="TestNG.ParametersClass" />
+        <item itemvalue="TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/dataProvider.xml" />
         <item itemvalue="TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngParallelHome.xml" />
-        <item itemvalue="TestNG./Users/polinasydorenko/IdeaProjects/QA_Auto/src/test/resources/testngGroupingHome.xml" />
-        <item itemvalue="TestNG.Groups" />
-        <item itemvalue="TestNG.Groups.one" />
-        <item itemvalue="TestNG.Groups.two" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716985492765</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="auto hw 4 testParallel">
+      <option name="closed" value="true" />
+      <created>1716986304155</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716986304155</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -402,7 +407,8 @@
     <MESSAGE value="auto hw 3 test1" />
     <MESSAGE value="auto hw 3 test11" />
     <MESSAGE value="auto hw 4 testGrouping" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto hw 4 testGrouping" />
+    <MESSAGE value="auto hw 4 testParallel" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto hw 4 testParallel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
