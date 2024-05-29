@@ -55,13 +55,14 @@ public class DataProviderClass {
         String searchResultText = searchResult.getText();
 
         if (searchResultText.contains(searchWord)) {
-            System.out.println("Результати пошуку для '" + searchWord + "' знайдено успішно.");
+            Assert.assertTrue(true, "Результати пошуку для '" + searchWord + "' знайдено успішно.");
         } else {
-            System.out.println("Результати пошуку для '" + searchWord + "' не знайдено.");
+            Assert.assertFalse(false, "Результати пошуку для '" + searchWord+ "' не знайдено.");
         }
+    }
 
 
     }
-}
+
 
 
